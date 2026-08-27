@@ -1,0 +1,21 @@
+=== nbody_hip (power): 5 GPU(s), numbodies=2097152, fp64 ===
+# command: /theory/home/hctseng/nbody/nbody_hip/bench/../build/nbody_hip -benchmark -numdevices=5 -numbodies=2097152 -fp64 
+# host: kramu
+# date: 2026-08-27T21:06:45+08:00
+# method: amd-smi socket_power sampled every 200ms on GPUs 0-4 for the run's duration, averaged per GPU then summed -- same method as the CUDA-side script
+----
+> HIP device [0]: AMD Instinct MI210 (gfx90a:sramecc+:xnack-)
+> Headless mode
+> Simulation data stored in video memory
+> Double precision floating point simulation
+> 5 device(s) used for simulation
+> 2097152 bodies
+2097152 bodies, total time for 10 iterations: 29960.744 ms
+= 1467.936 billion interactions per second
+= 44038.090 double-precision GFLOP/s at 30 flops per interaction
+----
+wall-clock measurement window: 33.466 s
+power samples collected: 528 rows (across 5 GPU(s))
+average total power draw: 1341.70 W
+estimated total GPU energy consumed: 44901.332 J
+performance per watt: 32.82 GFLOP/s per W
