@@ -1,0 +1,73 @@
+# command: /theory/home/hctseng/cuda-samples/cpp/5_Domain_Specific/nbody/bench/../build/nbody -benchmark -numdevices=2 -numbodies=2097152 -fp64 
+# host: kawas18.tiara.sinica.edu.tw
+# date: 2026-08-27T14:08:14+08:00
+# GPU inventory:
+GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-e92922b4-7ce8-170d-7146-df51111da887)
+GPU 1: NVIDIA A100-SXM4-80GB (UUID: GPU-357c1158-ec85-58fe-9db5-c7e010adca8c)
+GPU 2: NVIDIA A100-SXM4-80GB (UUID: GPU-ec72e6df-a580-7c46-d5ca-dc82ca37723a)
+GPU 3: NVIDIA A100-SXM4-80GB (UUID: GPU-d28e1ae3-12a0-5ed7-afa2-50127add4b92)
+GPU 4: NVIDIA A100-SXM4-80GB (UUID: GPU-82f43607-b06f-4976-b0b9-b523571019e9)
+GPU 5: NVIDIA A100-SXM4-80GB (UUID: GPU-0fefae63-984c-dff5-215e-2493047ae1c0)
+GPU 6: NVIDIA A100-SXM4-80GB (UUID: GPU-ea781671-2ee1-d8ac-3224-481097dd3f0d)
+GPU 7: NVIDIA A100-SXM4-80GB (UUID: GPU-b694d9a3-6df2-9937-94a0-e9795f1dfad2)
+
+index, name, pci.bus_id, memory.total [MiB]
+0, NVIDIA A100-SXM4-80GB, 00000000:07:00.0, 81920 MiB
+1, NVIDIA A100-SXM4-80GB, 00000000:0B:00.0, 81920 MiB
+2, NVIDIA A100-SXM4-80GB, 00000000:48:00.0, 81920 MiB
+3, NVIDIA A100-SXM4-80GB, 00000000:4C:00.0, 81920 MiB
+4, NVIDIA A100-SXM4-80GB, 00000000:88:00.0, 81920 MiB
+5, NVIDIA A100-SXM4-80GB, 00000000:8B:00.0, 81920 MiB
+6, NVIDIA A100-SXM4-80GB, 00000000:C8:00.0, 81920 MiB
+7, NVIDIA A100-SXM4-80GB, 00000000:CB:00.0, 81920 MiB
+----
+Run "nbody -benchmark [-numbodies=<numBodies>]" to measure performance.
+	-fullscreen       (run n-body simulation in fullscreen mode)
+	-fp64             (use double precision floating point values for simulation)
+	-hostmem          (stores simulation data in host memory)
+	-benchmark        (run benchmark to measure performance) 
+	-numbodies=<N>    (number of bodies (>= 1) to run in simulation) 
+	-device=<d>       (where d=0,1,2.... for the CUDA device to use)
+	-numdevices=<i>   (where i=(number of CUDA devices > 0) to use for simulation)
+	-compare          (compares simulation results running once on the default GPU and once on the CPU)
+	-cpu              (run n-body simulation on the CPU)
+	-tipsy=<file.bin> (load a tipsy model file for simulation)
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+
+number of CUDA devices  = 2
+> Windowed mode
+> Simulation data stored in video memory
+> Double precision floating point simulation
+> 2 Devices used for simulation
+GPU Device 0: "Ampere" with compute capability 8.0
+
+> Compute 8.0 CUDA device: [NVIDIA A100-SXM4-80GB]
+> Compute 8.0 CUDA device: [NVIDIA A100-SXM4-80GB]
+number of bodies = 2097152
+2097152 bodies, total time for 10 iterations: 87489.625 ms
+= 502.693 billion interactions per second
+= 15080.805 double-precision GFLOP/s at 30 flops per interaction
+	Command being timed: "/theory/home/hctseng/cuda-samples/cpp/5_Domain_Specific/nbody/bench/../build/nbody -benchmark -numdevices=2 -numbodies=2097152 -fp64"
+	User time (seconds): 96.41
+	System time (seconds): 0.66
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:37.26
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 615496
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 17228
+	Voluntary context switches: 2082
+	Involuntary context switches: 48
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

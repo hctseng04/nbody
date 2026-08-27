@@ -1,0 +1,88 @@
+# command: /theory/aranea/data/hctseng/cuda-samples/cpp/5_Domain_Specific/nbody_hip/bench/../nbody_hip_bench -benchmark -numdevices=2 -numbodies=2097152 -fp64 
+# host: kramu
+# date: 2026-08-27T14:13:43+08:00
+# GPU inventory:
+
+
+============================ ROCm System Management Interface ============================
+====================================== Product Info ======================================
+GPU[0]		: Card Series: 		AMD Instinct MI210
+GPU[0]		: Card Model: 		0x740f
+GPU[0]		: Card Vendor: 		Advanced Micro Devices, Inc. [AMD/ATI]
+GPU[0]		: Card SKU: 		D67301V
+GPU[0]		: Subsystem ID: 	0x0c34
+GPU[0]		: Device Rev: 		0x02
+GPU[0]		: Node ID: 		2
+GPU[0]		: GUID: 		60647
+GPU[0]		: GFX Version: 		gfx90a
+GPU[1]		: Card Series: 		AMD Instinct MI210
+GPU[1]		: Card Model: 		0x740f
+GPU[1]		: Card Vendor: 		Advanced Micro Devices, Inc. [AMD/ATI]
+GPU[1]		: Card SKU: 		D67301V
+GPU[1]		: Subsystem ID: 	0x0c34
+GPU[1]		: Device Rev: 		0x02
+GPU[1]		: Node ID: 		3
+GPU[1]		: GUID: 		31011
+GPU[1]		: GFX Version: 		gfx90a
+GPU[2]		: Card Series: 		AMD Instinct MI210
+GPU[2]		: Card Model: 		0x740f
+GPU[2]		: Card Vendor: 		Advanced Micro Devices, Inc. [AMD/ATI]
+GPU[2]		: Card SKU: 		D67301V
+GPU[2]		: Subsystem ID: 	0x0c34
+GPU[2]		: Device Rev: 		0x02
+GPU[2]		: Node ID: 		4
+GPU[2]		: GUID: 		10976
+GPU[2]		: GFX Version: 		gfx90a
+GPU[3]		: Card Series: 		AMD Instinct MI210
+GPU[3]		: Card Model: 		0x740f
+GPU[3]		: Card Vendor: 		Advanced Micro Devices, Inc. [AMD/ATI]
+GPU[3]		: Card SKU: 		D67301V
+GPU[3]		: Subsystem ID: 	0x1000
+GPU[3]		: Device Rev: 		0x02
+GPU[3]		: Node ID: 		5
+GPU[3]		: GUID: 		32164
+GPU[3]		: GFX Version: 		gfx90a
+GPU[4]		: Card Series: 		AMD Instinct MI210
+GPU[4]		: Card Model: 		0x740f
+GPU[4]		: Card Vendor: 		Advanced Micro Devices, Inc. [AMD/ATI]
+GPU[4]		: Card SKU: 		D67301V
+GPU[4]		: Subsystem ID: 	0x0c34
+GPU[4]		: Device Rev: 		0x02
+GPU[4]		: Node ID: 		6
+GPU[4]		: GUID: 		17289
+GPU[4]		: GFX Version: 		gfx90a
+==========================================================================================
+================================== End of ROCm SMI Log ===================================
+----
+> HIP device [0]: AMD Instinct MI210 (gfx90a:sramecc+:xnack-)
+> Headless mode
+> Simulation data stored in video memory
+> Double precision floating point simulation
+> 2 device(s) used for simulation
+> 2097152 bodies
+2097152 bodies, total time for 10 iterations: 74421.078 ms
+= 590.968 billion interactions per second
+= 17729.036 double-precision GFLOP/s at 30 flops per interaction
+	Command being timed: "/theory/aranea/data/hctseng/cuda-samples/cpp/5_Domain_Specific/nbody_hip/bench/../nbody_hip_bench -benchmark -numdevices=2 -numbodies=2097152 -fp64"
+	User time (seconds): 81.31
+	System time (seconds): 0.21
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:21.91
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 717196
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 14628
+	Voluntary context switches: 52
+	Involuntary context switches: 135
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1248
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
