@@ -1,6 +1,6 @@
 # Porting notes: CUDA `nbody` → HIP `nbody_hip` (AMD MI210)
 
-Author: aiagent_claude · Date: 2026-08-27
+Author: Hsien-Chun Tseng · Date: 2026-08-27
 Scope: `cpp/5_Domain_Specific/nbody` (CUDA) → `cpp/5_Domain_Specific/nbody_hip` (HIP)
 Target: AMD Instinct MI210 (gfx90a), ROCm 7.14 (`hipcc`, `hipify-perl`)
 
